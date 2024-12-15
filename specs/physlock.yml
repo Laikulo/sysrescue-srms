@@ -1,0 +1,8 @@
+name: physlock
+# physlock is GPL2
+redistributable: true
+
+build:
+  type: cowpacman2srm
+  options:
+    packages: physlock

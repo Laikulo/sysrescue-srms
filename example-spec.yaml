@@ -1,0 +1,16 @@
+# The name of this SRM
+name: example-srm
+
+# If false, don't publish the SRM.
+redistributable: true
+# A list of SRMs to be loaded when building this SRM.
+built-on: [basesrm1, basesrm2]
+
+# The way to build this SRM
+# - buildscript: A script that generates an SRM on disk
+# - pacman: Generates a script usin cowpackaman2srm
+build:
+  type: buildscript
+  options:
+    script: build-my-srm arg1 arg2 arg3
+    output-location: /tmp/my-srm-*.srm
